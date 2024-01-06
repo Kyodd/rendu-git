@@ -1,0 +1,415 @@
+*::before,
+*::after,
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #262626;
+}
+body header {
+  background-image: url("../Images/bg.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: brightness(90%);
+  min-height: 800px;
+}
+body header .Title {
+  font-size: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body header .Title .info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+body header .Title .info .info_resto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #ffffff;
+}
+body header .Title .info .info_resto .name {
+  font-size: 38px;
+}
+body header .Title .info .info_resto .resto {
+  font-size: 24px;
+}
+body header .Title .info .logo span {
+  color: #d3ab55;
+  font-size: 48px;
+}
+body header .Title .burger {
+  width: 50px;
+  z-index: 999;
+  color: #d3ab55;
+}
+body header .Title .burger:hover {
+  cursor: pointer;
+}
+body header .Welcome {
+  padding-top: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+body header .Welcome h1 {
+  font-size: 5rem;
+  color: #d3ab55;
+}
+body header .Welcome h3 {
+  font-size: 3rem;
+  font-weight: 100;
+  color: grey;
+}
+body header .Welcome button {
+  margin-top: 50px;
+  padding: 10px 30px;
+  font-size: 1rem;
+  background-color: transparent;
+  color: #d3ab55;
+  font-weight: 600;
+  border: 1px solid #d3ab55;
+}
+body header .Welcome button:hover {
+  cursor: pointer;
+}
+body header .Welcome button:hover {
+  cursor: pointer;
+  color: #262626;
+  background-color: #d3ab55;
+}
+body header .responsive_menu {
+  background-color: #262626;
+  position: absolute;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(100vw - 18px);
+  height: 800px;
+}
+body header .responsive_menu .img_resp {
+  background-color: #262626;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+body header .responsive_menu .img_resp img {
+  max-width: 400px;
+  border-radius: 10px;
+}
+body header .responsive_menu .img_resp #img2 {
+  margin: -65px 0 0 150px;
+  filter: opacity(80%);
+}
+body header .responsive_menu .img_resp #img3 {
+  margin: -65px 0 0 320px;
+  filter: opacity(75%);
+}
+body header .responsive_menu .inf_resp {
+  height: 100%;
+  width: 100%;
+  background-color: #1f1d1d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+body header .responsive_menu .inf_resp p {
+  margin: 5px 0;
+  font-size: 3rem;
+  color: #bbbbbb;
+}
+body header .responsive_menu .inf_resp p:hover {
+  color: #d3ab55;
+  cursor: pointer;
+}
+body .about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 600px;
+}
+body .about .about_img .fruit_resp {
+  display: none;
+}
+body .about .about_img img {
+  max-width: 600px;
+}
+body .about .about_txt {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+body .about .about_txt .top {
+  margin-top: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+body .about .about_txt .top h2 {
+  color: #d3ab55;
+  font-size: 5rem;
+}
+body .about .about_txt .top h3 {
+  margin: 20px 0;
+  color: #ffffff;
+  font-size: 2rem;
+}
+body .about .about_txt .bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+body .about .about_txt .bottom span {
+  color: #d3ab55;
+  font-size: 2rem;
+  font-weight: 600;
+}
+body .about .about_txt .bottom p {
+  color: #ffffff;
+}
+body .about .about_txt .bottom p i {
+  padding-left: 30px;
+}
+body .about .about_txt .bottom button {
+  margin-top: 50px;
+  padding: 10px 30px;
+  font-size: 1rem;
+  background-color: transparent;
+  color: #d3ab55;
+  font-weight: 600;
+  border: 1px solid #d3ab55;
+}
+body .about .about_txt .bottom button:hover {
+  cursor: pointer;
+}
+body .about .about_txt .bottom button:hover {
+  cursor: pointer;
+  color: #262626;
+  background-color: #d3ab55;
+}
+body .Dishes {
+  width: calc(100vw - 18px);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
+}
+body .Dishes div {
+  width: 33%;
+}
+body .Dishes div img {
+  max-width: 100%;
+}
+body .Dishes div div {
+  display: none;
+  position: absolute;
+}
+body .Dishes div:hover div {
+  display: block;
+  padding: 7% 15%;
+}
+body .Dishes .price1:after {
+  position: inherit;
+  content: "";
+  top: 0vh;
+  left: 0vw;
+  width: 0vw;
+  height: 100%;
+  background: #d3ab55;
+  opacity: 0.4;
+  transition: all 0.35s;
+}
+body .Dishes .price1:hover:after {
+  width: 100%;
+}
+body .Dishes .price2:after {
+  position: inherit;
+  content: "";
+  top: 0vh;
+  left: 0vw;
+  width: 0vw;
+  height: 100%;
+  background: #d3ab55;
+  opacity: 0.4;
+  transition: all 0.35s;
+}
+body .Dishes .price2:hover:after {
+  width: 100%;
+}
+body .Dishes .price3:after {
+  position: inherit;
+  content: "";
+  top: 0vh;
+  left: 0vw;
+  width: 0vw;
+  height: 100%;
+  background: #d3ab55;
+  opacity: 0.4;
+  transition: all 0.35s;
+}
+body .Dishes .price3:hover:after {
+  width: 100%;
+}
+body .Dishes .price4:after {
+  position: inherit;
+  content: "";
+  top: 0vh;
+  left: 0vw;
+  width: 0vw;
+  height: 100%;
+  background: #d3ab55;
+  opacity: 0.4;
+  transition: all 0.35s;
+}
+body .Dishes .price4:hover:after {
+  width: 100%;
+}
+body .Dishes .price5:after {
+  position: inherit;
+  content: "";
+  top: 0vh;
+  left: 0vw;
+  width: 0vw;
+  height: 100%;
+  background: #d3ab55;
+  opacity: 0.4;
+  transition: all 0.35s;
+}
+body .Dishes .price5:hover:after {
+  width: 100%;
+}
+body .Dishes .price6:after {
+  position: inherit;
+  content: "";
+  top: 0vh;
+  left: 0vw;
+  width: 0vw;
+  height: 100%;
+  background: #d3ab55;
+  opacity: 0.4;
+  transition: all 0.35s;
+}
+body .Dishes .price6:hover:after {
+  width: 100%;
+}
+body .Dishes button {
+  border-radius: 20%;
+  background-color: #d3ab55;
+  color: #262626;
+}
+body .Dishes button:hover {
+  cursor: pointer;
+  color: #262626;
+  background-color: #d3ab55;
+}
+body footer {
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+body footer .info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding-bottom: 50px;
+}
+body footer .info .info_resto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+body footer .info .info_resto .name {
+  font-size: 34px;
+  color: #ffffff;
+}
+body footer .info .info_resto .resto {
+  font-size: 18px;
+  color: #ffffff;
+}
+body footer .info div {
+  color: #d3ab55;
+}
+body footer .Contact {
+  padding-bottom: 25px;
+}
+body footer .Contact a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 36px;
+  margin: 0 5px;
+}
+body footer .Contact .fa-square-facebook:hover {
+  color: #d3ab55;
+}
+body footer .Contact .fa-instagram:hover {
+  color: #d3ab55;
+}
+body footer .Contact .fa-square-google-plus:hover {
+  color: #d3ab55;
+}
+body footer .Contact .fa-youtube:hover {
+  color: #d3ab55;
+}
+body footer p {
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.hiden {
+  display: none !important;
+}
+
+@media only screen and (max-width: 1280px) {
+  body header .responsive_menu .img_resp {
+    display: none;
+  }
+  body .about {
+    width: calc(100wh - 40px - 32px);
+    margin-top: 100px;
+    flex-direction: column;
+  }
+  body .about .about_img .fruit_resp {
+    display: block;
+  }
+  body .about .about_img .non_resp {
+    display: none;
+  }
+  body .about .about_img img {
+    max-width: 450px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  body .Dishes div {
+    width: 100%;
+  }
+  body .Dishes div div {
+    display: none;
+  }
+  body .Dishes div:hover div {
+    display: block;
+    padding: 22% 40%;
+  }
+}/*# sourceMappingURL=Style.css.map */
