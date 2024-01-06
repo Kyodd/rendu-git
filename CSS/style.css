@@ -11,12 +11,20 @@ body {
   justify-content: center;
   font-family: sans-serif;
 }
-body .temp2 button {
+body .temp .logo {
+  height: 100px;
+}
+body .temp button {
+  background-color: #4287f5;
+  border: none;
   border-radius: 5px;
+  cursor: pointer;
   height: 35px;
   width: 120px;
+  color: white;
+  font-weight: bold;
 }
-body .temp2 button a {
+body .temp button a {
   text-decoration: none;
   color: black;
 }/*# sourceMappingURL=style.css.map */

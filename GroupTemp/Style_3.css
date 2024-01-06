@@ -1,0 +1,708 @@
+*::before,
+*::after,
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+body .ticket {
+  color: white;
+  font-weight: bolder;
+  border: none;
+  border-radius: 5px;
+  background-color: #3913C3;
+}
+body .ticket:hover {
+  background-color: #F10486;
+}
+body .ticketicon {
+  filter: invert(97%);
+  width: 20px;
+  margin-left: 0.5rem;
+}
+body header {
+  background-image: url(./src/hero/hero-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 700px;
+  color: white;
+}
+body header nav {
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+body header nav div img {
+  min-width: 100px;
+  width: 200px;
+}
+body header nav div button {
+  height: 100%;
+  text-align: center;
+  padding: 5px 20px;
+  color: #FFFFFF;
+  background-color: #3913C3;
+  border: none;
+  border-radius: 5px;
+}
+body header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body header nav ul li {
+  margin-left: 20px;
+  font-size: 18px;
+  font-weight: 600;
+}
+body header .top_head {
+  margin: 0 auto;
+  width: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+body header .top_head .location {
+  margin-bottom: 20px;
+  background-color: rgba(143, 143, 150, 0.5137254902);
+  color: #FFFFFF;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+}
+body header .top_head h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+body header .top_head div {
+  margin-bottom: 50px;
+}
+body header .top_head div p {
+  text-align: center;
+  font-size: 12px;
+}
+body header .top_head button {
+  padding: 10px 20px;
+  background-color: #F10486;
+}
+body .timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: -100px auto 0 auto;
+  width: 70vw;
+  height: 300px;
+  border: #7258d3 solid 5px;
+  background-color: #3913C3;
+  background-image: url("../Source/countdown/bg.png");
+}
+body .timer .time1 {
+  width: 100%;
+  height: 100%;
+}
+body .timer .time1 img {
+  height: 100%;
+  width: 100%;
+}
+body .timer .time2 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+}
+body .timer .time2 span {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 600;
+}
+body .timer .time3 {
+  width: 100%;
+  height: 100%;
+}
+body .timer .time3 img {
+  height: 100%;
+  width: 100%;
+}
+body .Join {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f5f7fa;
+}
+body .Join .inf_j {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+body .Join .inf_j h3 {
+  margin: 20px 0;
+  color: #F10486;
+}
+body .Join .inf_j h2 {
+  margin: 20px 0;
+}
+body .Join .inf_j div p {
+  font-size: 16px;
+}
+body .Join .container_card {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 50px;
+}
+body .Join .container_card .card_j {
+  margin: 20px 25px;
+  width: 400px;
+  padding: 50px 20px;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+}
+body .Join .container_card .card_j .card_header {
+  font-size: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+body .Join .container_card .card_j .card_header p {
+  background-color: #3913C3;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+body .Join .container_card .card_j .card_header p i {
+  color: #FFFFFF;
+}
+body .Join .container_card .card_j .card_header span {
+  color: rgba(143, 143, 150, 0.5137254902);
+}
+body .Join .container_card .card_j .card_body h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+body .Join .container_card .card_j .card_body p {
+  font-weight: 600;
+  font-size: 14px;
+  word-break: break-all;
+  color: rgba(143, 143, 150, 0.5137254902);
+}
+body .Event {
+  background-color: #111232;
+  background-image: url("../Source/about/about-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 700px;
+}
+body .Event div,
+body .Event .event_inf {
+  margin-left: 20px;
+}
+body .Event div img,
+body .Event .event_inf img {
+  max-width: 700px;
+}
+body .Event .event_inf {
+  color: #FFFFFF;
+}
+body .Event .event_inf h1 {
+  padding: 30px 0;
+  font-size: 18px;
+}
+body .Event .event_inf h2 {
+  font-size: 30px;
+  padding: 30px 0;
+}
+body .Event .event_inf p {
+  width: 90%;
+  margin: 30px 0;
+}
+body .Event .event_inf span i {
+  background-color: #F10486;
+  padding: 15px 10px;
+  border-radius: 50%;
+}
+body .Speakers {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-weight: bolder;
+  align-items: center;
+  line-height: 1.5;
+  flex-direction: column;
+  background-color: #f5f7fa;
+}
+body .Speakers h1 {
+  color: #F10486;
+  font-size: 14px;
+  margin: 10px 0;
+}
+body .Speakers h2 {
+  font-size: 24px;
+  margin: 20px 0;
+}
+body .Speakers .speak_txt {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+body .Speakers .speak_txt p {
+  font-size: 14px;
+}
+body .Speakers div {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 80px;
+}
+body .Speakers div div {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 10px;
+}
+body .Speakers div div div img {
+  border-radius: 5px;
+}
+body .Speakers div div .speak_emp {
+  display: flex;
+  margin-left: 50px;
+  align-items: flex-start;
+}
+body .Speakers div div .speak_emp h1 {
+  color: black;
+  font-size: 18px;
+  margin: 0;
+}
+body .Speakers div div .speak_emp h2 {
+  padding-top: 5px;
+  margin: 0;
+  font-size: 12px;
+}
+body .Schedule {
+  margin-top: 50px;
+  background-color: #f5f7fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+body .Schedule h1 {
+  margin-top: 50px;
+  color: #F10486;
+  font-size: 18px;
+}
+body .Schedule h2 {
+  font-size: 32px;
+  font-weight: 900;
+  margin: 20px 0;
+}
+body .Schedule .schedule_day {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+body .Schedule .schedule_day div {
+  background-color: #FFFFFF;
+  margin: 5px 5px;
+  padding: 10px 150px;
+  border-radius: 5px;
+}
+body .Schedule .schedule_day div h1 {
+  margin: 0;
+  text-align: center;
+  font-size: 18px;
+  color: black;
+  margin-bottom: 5px;
+  padding-top: 30px;
+}
+body .Schedule .schedule_day div h2 {
+  color: rgba(143, 143, 150, 0.5137254902);
+  font-size: 12px;
+  margin: 0;
+  padding-bottom: 30px;
+}
+body .Schedule .schedule_day .active {
+  background-color: #3913C3;
+}
+body .Schedule .schedule_day .active h1,
+body .Schedule .schedule_day .active h2 {
+  color: #FFFFFF;
+}
+body .Schedule .schedule_inf {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  width: 85%;
+  padding: 20px;
+}
+body .Schedule .schedule_inf .left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .Schedule .schedule_inf .left h1 {
+  margin: 0;
+  font-size: 36px;
+  color: black;
+  text-align: start;
+  padding-right: 10px;
+}
+body .Schedule .schedule_inf .left div {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+body .Schedule .schedule_inf .left div h2 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+body .Schedule .schedule_inf .left div p {
+  color: rgba(143, 143, 150, 0.5137254902);
+  font-size: 14px;
+  font-weight: 600;
+}
+body .Schedule .schedule_inf .middle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 64px;
+}
+body .Schedule .schedule_inf .middle img {
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+  margin-right: 10px;
+}
+body .Schedule .schedule_inf .middle div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+body .Schedule .schedule_inf .middle div h1 {
+  font-size: 18px;
+  color: black;
+  margin: 0;
+  margin-bottom: 10px;
+}
+body .Schedule .schedule_inf .middle div div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+body .Schedule .schedule_inf .middle div div h2 {
+  font-size: 14px;
+  padding-right: 5px;
+  color: rgba(143, 143, 150, 0.5137254902);
+  margin: 0;
+}
+body .Schedule .schedule_inf .right button {
+  color: #FFFFFF;
+  background-color: #3913C3;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+}
+body .Schedule .load_more {
+  color: #FFFFFF;
+  background-color: #F10486;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  margin: 50px 0;
+}
+body .Pricing {
+  margin-top: 30px;
+  background-image: url(../Source/pricing/pricing-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #FFFFFF;
+}
+body .Pricing .princing_layout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(to top right, rgba(57, 19, 195, 0.8), rgba(241, 4, 134, 0.8));
+}
+body .Pricing .princing_layout h1 {
+  margin: 50px 0;
+  font-size: 18px;
+}
+body .Pricing .princing_layout h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+body .Pricing .princing_layout p {
+  font-size: 14px;
+}
+body .Pricing .princing_layout .container_pricing {
+  margin: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  color: black;
+}
+body .Pricing .princing_layout .container_pricing div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #FFFFFF;
+  margin: 10px 5px;
+  padding: 50px 100px;
+  border-radius: 5px;
+}
+body .Pricing .princing_layout .container_pricing div .offer {
+  background-color: transparent;
+  color: #3913C3;
+  font-weight: 600;
+  border: 2px solid #3913C3;
+  font-size: 14px;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+body .Pricing .princing_layout .container_pricing div .offer_mid {
+  background-color: transparent;
+  color: #F10486;
+  font-weight: 600;
+  border: 2px solid #F10486;
+  font-size: 14px;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+body .Pricing .princing_layout .container_pricing div h3 {
+  margin: 20px 0;
+  font-size: 10px;
+  color: rgba(143, 143, 150, 0.5137254902);
+}
+body .Pricing .princing_layout .container_pricing div h4 {
+  font-size: 30px;
+}
+body .Pricing .princing_layout .container_pricing div .get_ticket {
+  margin: 10px 0;
+  background-color: #3913C3;
+  color: #FFFFFF;
+  border: none;
+  padding: 5px 20px;
+  border-radius: 5px;
+}
+body .Pricing .princing_layout .container_pricing div .get_ticket_mid {
+  margin: 10px 0;
+  background-color: #F10486;
+  color: #FFFFFF;
+  border: none;
+  padding: 5px 20px;
+  border-radius: 5px;
+}
+body .Pricing .princing_layout .container_pricing div ul {
+  margin-top: 30px;
+  list-style: none;
+  color: rgba(143, 143, 150, 0.5137254902);
+}
+body .Pricing .princing_layout .container_pricing div ul li {
+  margin: 5px 0;
+  font-size: 12px;
+}
+body .Testi {
+  color: #FFFFFF;
+  background: linear-gradient(to top right, #3913C3, #F10486);
+}
+
+.testi-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.testi-text h1 {
+  font-size: 18px;
+}
+.testi-text h2 {
+  font-size: 30px;
+}
+.testi-text p {
+  font-size: 14px;
+}
+
+.testi-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 2em;
+}
+
+.testi-items {
+  width: 500px;
+  text-align: center;
+  background-color: white;
+}
+
+.testi-items div {
+  margin: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.testi-items div img {
+  clip-path:ellipse(33% 50%);
+  width: 40%;
+}
+
+.testi-items div div {
+  color: black;
+  display: flex;
+  flex-direction: column;
+}
+
+.testi-items p {
+  color: black;
+}
+
+/*body .Testi div {
+  margin: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+body .Testi div div {
+  background-color: #FFFFFF;
+  color: black;
+  margin: 0 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 10px;
+  width: 500px;
+  border-radius: 5px;
+}
+
+
+body .Testi div div div {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+}
+body .Testi div div div img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+body .Testi div div div div {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: auto 0;
+  flex-direction: column;
+}
+body .Testi div div div div h3 {
+  font-weight: 100;
+}
+body .Testi div div div div h4 {
+  font-size: 14px;
+  color: rgba(143, 143, 150, 0.5137254902);
+}
+body .Testi div div div div span {
+  font-size: 30px;
+  color: orange;
+}
+body .Testi div div p {
+  width: 90%;
+  font-size: 14px;
+} */
+
+
+
+body footer {
+  margin-top: 50px;
+  background-color: #f5f7fa;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px;
+}
+body footer .foo01 {
+  width: 25%;
+}
+body footer .foo01 img {
+  max-width: 240px;
+}
+body footer .foo01 p {
+  color: grey;
+  font-size: 14px;
+  margin: 10px 0;
+}
+body footer .foo01 div img {
+  margin: 0 5px;
+  width: 24px;
+}
+body footer .foo02 ul {
+  list-style: none;
+}
+body footer .foo02 ul li {
+  font-size: 14px;
+  margin: 10px 0;
+}
+body footer .foo02 ul li h4 {
+  font-size: 18px;
+}
+body footer .foo04 {
+  height: 100%;
+  width: 400px;
+}
+body footer .foo04 h4 {
+  font-size: 18px;
+}
+body footer .foo04 form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 10px;
+}
+body footer .foo04 form input {
+  border: 1px solid grey;
+  border-radius: 5px;
+  margin: 5px 0;
+  padding: 10px 20px;
+  background-color: transparent;
+}
+body footer .foo04 form button {
+  border: none;
+  border-radius: 5px;
+  background-color: #F10486;
+  margin-top: 10px;
+  padding: 5px;
+  color: #FFFFFF;
+}/*# sourceMappingURL=Style.css.map */
