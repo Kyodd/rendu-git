@@ -27,4 +27,12 @@ body .temp button {
 body .temp button a {
   text-decoration: none;
   color: black;
+}
+body .temp .bottomContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .temp .bottomContent .progBar {
+  margin: 0 0 20px 0;
 }/*# sourceMappingURL=style.css.map */

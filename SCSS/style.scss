@@ -28,6 +28,16 @@ body {
             text-decoration: none;
             color: black;
         }
+
+    }
+
+    .bottomContent{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .progBar{
+        margin: 0 0 20px 0;
+      }
     }
   }
 }
